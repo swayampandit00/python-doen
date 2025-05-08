@@ -1,0 +1,31 @@
+<div class="features text-center my-5 py-5" style="background: #f9f9f9;">
+  <div class="container">
+    <h2 class="features-title mb-4" style="font-weight: 900; font-size: 2.5rem; color: #2bb673;">
+      AnyFast Online Video Downloader
+    </h2>
+    <p class="mb-5" style="font-size: 1.2rem; color: #555;">
+      Download all videos from the internet online with a high-quality MP4/MP3 in the GiveFastLink video downloader for 100% free, easy-to-use, and unlimited.
+    </p>
+
+    <div class="feature-boxes my-5" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+      {% for feature in features %}
+      <div class="feature p-4 bg-white rounded shadow-sm">
+        <div class="feature-image-container mb-3">
+          <img
+            class="feature-image"
+            src="{{feature.image}}"
+            alt="{{feature.title}}"
+            style="width: 100%; height: 150px; object-fit: contain;"
+          />
+        </div>
+        <div class="feature-title" style="font-weight: 700; font-size: 1.25rem; color: #36d480;">
+          {{feature.title}}
+        </div>
+        <div class="feature-description" style="font-size: 1rem; color: #666;">
+          {{feature.description}}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

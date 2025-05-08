@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if error %}
+<div style="color: red; background-color: #fdd; padding: 10px; margin-bottom: 15px; border: 1px solid red; border-radius: 5px;">
+    {{ error }}
+</div>
+{% endif %}
+
+{% include 'components/cover.html' %}
+{% include 'components/features.html' %}
+{% include 'components/faqs.html' %}
+
+{% endblock %}
